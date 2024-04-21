@@ -1,0 +1,39 @@
+GET http://localhost:5148
+
+###
+
+GET http://localhost:5148/test
+
+###
+
+GET http://localhost:5148/nope
+
+##### TODOs
+
+GET http://localhost:5148/todos
+###
+GET http://localhost:5148/todos/1
+###
+POST http://localhost:5148/todos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "New task",
+    "dueDate": "2024-04-22",
+    "isCompleted": false
+}
+###
+POST http://localhost:5148/todos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "New task",
+    "dueDate": "2020-04-22",
+    "isCompleted": true
+}
+###
+DELETE http://localhost:5148/todos/1
+###
+GET http://localhost:5148/tasks/1
